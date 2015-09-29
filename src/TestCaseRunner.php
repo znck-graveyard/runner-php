@@ -55,9 +55,9 @@ class TestCaseRunner
      */
     public function __construct(
         $time = 2,
-        $memory = 64 * 1024 * 1024,
-        $stack = 8 * 1024 * 1024,
-        $output = 50 * 1024 * 1024,
+        $memory = 6410241024, // 64MB
+        $stack = 810241024, // 8MB
+        $output = 5010241024, // 50MB
         $files = 16,
         $processes = 1,
         $analysis = 'analysis.yml'
@@ -199,7 +199,8 @@ class TestCaseRunner
     {
         $binary = dirname(__DIR__) . '/runner/bin/runner';
         if (!file_exists($binary)) {
-            exec("cd ../runner/ && make");
+            chdir(dirname(__DIR__) . "/runner/");
+            exec('make');
         }
 
         return $binary;
