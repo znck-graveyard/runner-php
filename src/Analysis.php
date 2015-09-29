@@ -12,16 +12,16 @@ use Symfony\Component\Yaml\Yaml;
  * Class Analysis
  *
  * @package Znck\Runner
- * @property-read USER_TIME
- * @property-read SYS_TIME
- * @property-read TOTAL_TIME
- * @property-read MEMORY
- * @property-read MINOR_FAULTS
- * @property-read MAJOR_FAULTS
- * @property-read INPUT_COUNT
- * @property-read OUTPUT_COUNT
- * @property-read VOLUNTRY_CONTEXT_SWITCH
- * @property-read INVOLUNTRY_CONTEXT_SWITCH
+ * @property-read int $USER_TIME
+ * @property-read int $SYS_TIME
+ * @property-read int $TOTAL_TIME
+ * @property-read int $MEMORY
+ * @property-read int $MINOR_FAULTS
+ * @property-read int $MAJOR_FAULTS
+ * @property-read int $INPUT_COUNT
+ * @property-read int $OUTPUT_COUNT
+ * @property-read int $VOLUNTRY_CONTEXT_SWITCH
+ * @property-read int $INVOLUNTRY_CONTEXT_SWITCH
  */
 class Analysis
 {
