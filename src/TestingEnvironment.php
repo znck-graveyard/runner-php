@@ -11,7 +11,7 @@
  *
  * @package Znck\Runner
  */
-class TestCaseRunner
+class TestingEnvironment
 {
     /**
      * @type int
@@ -187,8 +187,8 @@ class TestCaseRunner
     {
         $bin = static::binary();
 
-        return "{$bin} -a {$this->analysis} -s {$this->stack} -m {$this->memory} -o {$this->output} "
-        . "-t {$this->time} -f {$this->files} -p {$this->processes}";
+        return "{$bin} --analysis='{$this->analysis}' --stack={$this->stack} --memory={$this->memory} --output-size={$this->output} "
+        . "--time={$this->time} --open-files={$this->files} --processes={$this->processes}";
     }
 
     /**

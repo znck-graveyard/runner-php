@@ -8,9 +8,9 @@ composer require znck/runner-php
 
 ### Usage:
 ```php
-$runner = \Znck\Runner\TestCaseRunner::binary();
+$runner = \Znck\Runner\TestingEnvironment::binary();
 // OR
-$runner = new \Znck\Runner\TestCaseRunner;
+$runner = new \Znck\Runner\TestingEnvironment;
 $runner->setTime(6);
 $runner->setMemory(128 * 1024 * 1024); // 128MB
 $runner = $runner->command();

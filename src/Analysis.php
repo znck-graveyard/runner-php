@@ -20,8 +20,8 @@ use Symfony\Component\Yaml\Yaml;
  * @property-read int $MAJOR_FAULTS
  * @property-read int $INPUT_COUNT
  * @property-read int $OUTPUT_COUNT
- * @property-read int $VOLUNTRY_CONTEXT_SWITCH
- * @property-read int $INVOLUNTRY_CONTEXT_SWITCH
+ * @property-read int $VOLUNTARY_CONTEXT_SWITCH
+ * @property-read int $INVOLUNTARY_CONTEXT_SWITCH
  */
 class Analysis
 {
